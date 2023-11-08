@@ -6,8 +6,8 @@ metadata:
     app: vpromc
 spec:
   selector:
-    - matchLabels:
-        app: vpromc
+    matchLabels:
+      app: vpromc
   replicas: 1
   template:
     metadata:
