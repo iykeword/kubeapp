@@ -15,7 +15,7 @@ spec:
         app: vprodb
     spec:
       containers:
-        - name: vprobd
+        - name: vprodb
           image: devopsike/vprofiledb:latest
 #          args:
 #           - "--ignore-db-dir=lost+found"
@@ -36,7 +36,7 @@ spec:
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-            volumeID: vol-0bf3f73a24e4639f3
+            volumeID: vol-070d602ea6390ac13
             fsType: ext4
 
       initContainers:
